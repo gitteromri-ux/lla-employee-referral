@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Employee Referral Program — Longevity Life Academy by eTeacher Group</title>
+<meta name="description" content="Internal eTeacher Group employee referral program. Refer a friend to The Longevity Blueprint — Longevity Life Academy's live 18-week longevity course — and earn $300 for every student who enrolls.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#006EFF;
+  --blue-strong:#0051CC;
+  --blue-light:#E8F1FF;
+  --blue-hover:#0059D6;
+  --sky:#6FA8FF;
+  --sky-bright:#7EC8FF;
+  --ink:#111111;
+  --ink-2:#2A2F36;
+  --ink-3:#5A6472;
+  --ink-4:#8892A0;
+  --bg:#FFFFFF;
+  --surface:#F5F7FA;
+  --surface-2:#EEF1F6;
+  --navy:#001233;
+  --navy-2:#0A1A3A;
+  --cream:#F7F4EC;
+  --gold:#F5B940;
+  --font-display:'Inter',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-serif:'Instrument Serif','Times New Roman',serif;
+  --radius-md:16px;
+  --radius-lg:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;border:none;cursor:pointer}
+
+/* ============ HEADER ============ */
+.site-header{position:absolute;top:0;left:0;right:0;z-index:50;padding:22px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand-lockup{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:var(--font-display);font-weight:600;font-size:20px;color:rgba(255,255,255,0.95);letter-spacing:0.08em;text-transform:uppercase;text-shadow:0 2px 20px rgba(0,0,0,0.3)}
+.brand-name .life-blue{color:#7EC8FF;font-weight:800}
+.brand-by{font-size:11px;color:rgba(255,255,255,0.7);margin-top:6px;display:flex;align-items:center;gap:6px}
+.brand-by img{height:14px;width:auto;filter:brightness(0) invert(1);opacity:0.85}
+.header-right{display:flex;align-items:center;gap:14px}
+.header-tag{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7EC8FF;padding:9px 16px;border:1px solid rgba(126,200,255,0.35);border-radius:999px;background:rgba(126,200,255,0.08);backdrop-filter:blur(6px)}
+.header-cta{color:#06243F;background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%);font-size:14px;font-weight:800;padding:11px 22px;border-radius:999px;transition:all .2s;box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 8px 20px rgba(46,139,230,.32)}
+.header-cta:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 12px 26px rgba(46,139,230,.45)}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,18,51,0.92) 0%,rgba(0,18,51,0.72) 48%,rgba(0,18,51,0.35) 100%);z-index:1}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:150px 40px 110px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero-copy{color:#fff}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#6FA8FF;margin-bottom:26px;padding:9px 18px;border:1px solid rgba(111,168,255,0.4);border-radius:999px;background:rgba(111,168,255,0.08)}
+.hero-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:#5EB6FF;box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7);animation:llaDot 2.2s ease-in-out infinite}
+.hero-title{font-family:var(--font-serif);font-weight:400;font-size:clamp(42px,5.6vw,76px);line-height:1.04;letter-spacing:-0.01em;margin-bottom:26px;color:#fff}
+.hero-title em{font-style:italic;color:#6FA8FF}
+.hero-sub{font-size:18px;line-height:1.65;color:rgba(255,255,255,0.87);max-width:560px;font-weight:400;margin-bottom:34px}
+.hero-sub strong{color:#fff;font-weight:700}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%);color:#06243F;font-weight:800;font-size:16px;padding:16px 30px;border-radius:14px;transition:all .2s;box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 10px 26px rgba(46,139,230,.38)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 16px 34px rgba(46,139,230,.5)}
+.btn-primary svg{width:17px;height:17px;transition:transform .25s}
+.btn-primary:hover svg{transform:translateX(3px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:16px;padding:16px 28px;border-radius:14px;border:1.5px solid rgba(255,255,255,0.28);transition:all .2s;background:rgba(255,255,255,0.04)}
+.btn-ghost:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.5)}
+.hero-stats{display:flex;gap:0;margin-top:46px;border-top:1px solid rgba(255,255,255,0.15);padding-top:28px;max-width:560px}
+.hero-stat{flex:1;padding-right:24px}
+.hero-stat + .hero-stat{padding-left:24px;border-left:1px solid rgba(255,255,255,0.15)}
+.hero-stat .n{font-family:var(--font-display);font-weight:800;font-size:26px;color:#7EC8FF;letter-spacing:-0.01em}
+.hero-stat .l{font-size:12.5px;color:rgba(255,255,255,0.7);margin-top:4px;line-height:1.4}
+
+/* Reward card in hero */
+.reward-card{justify-self:end;width:100%;max-width:440px;background:linear-gradient(180deg,rgba(15,45,82,0.92) 0%,rgba(6,26,52,0.94) 100%);border:1px solid rgba(126,200,255,0.22);border-radius:24px;padding:34px 34px 30px;color:#fff;box-shadow:0 0 0 1px rgba(120,180,255,.12),0 30px 80px rgba(0,0,0,0.45),0 0 44px rgba(94,182,255,0.16);backdrop-filter:blur(8px)}
+.reward-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#8FB9F0;margin-bottom:14px}
+.reward-amount{font-family:var(--font-display);font-weight:900;font-size:76px;line-height:1;letter-spacing:-0.03em;background:linear-gradient(180deg,#AFE0FF 0%,#5EB6FF 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;margin-bottom:8px}
+.reward-per{font-size:15px;color:rgba(255,255,255,0.85);font-weight:500;margin-bottom:22px}
+.reward-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:26px}
+.reward-list li{display:flex;gap:11px;font-size:14px;line-height:1.5;color:rgba(255,255,255,0.85);align-items:flex-start}
+.reward-list li svg{width:17px;height:17px;flex:none;margin-top:2px;color:#5EB6FF}
+.reward-card .btn-primary{width:100%;justify-content:center}
+.reward-fine{font-size:11px;color:rgba(255,255,255,0.5);margin-top:14px;text-align:center;line-height:1.5}
+
+@keyframes llaDot{0%,100%{box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7)}50%{box-shadow:0 0 14px #5EB6FF,0 0 24px rgba(94,182,255,1)}}
+
+/* ============ AS SEEN ON ============ */
+.seen-on{background:#fff;padding:54px 0 58px;border-bottom:1px solid var(--surface-2);overflow:hidden}
+.seen-on-head{text-align:center;margin-bottom:34px;padding:0 20px}
+.seen-on-title{font-size:13px;font-weight:800;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink-3)}
+.seen-on-title .dash{color:var(--blue)}
+.marquee{position:relative;width:100%}
+.marquee::before,.marquee::after{content:"";position:absolute;top:0;bottom:0;width:140px;z-index:2;pointer-events:none}
+.marquee::before{left:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,0) 100%)}
+.marquee::after{right:0;background:linear-gradient(270deg,#fff 0%,rgba(255,255,255,0) 100%)}
+.marquee-track{display:flex;align-items:center;gap:96px;width:max-content;animation:marquee 32s linear infinite;padding:6px 48px}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-item{display:flex;align-items:center;flex:none;opacity:.62;filter:grayscale(1);transition:all .35s ease}
+.marquee-item:hover{opacity:1;filter:grayscale(0);transform:scale(1.06)}
+.marquee-item img,.marquee-item svg{height:34px;width:auto;display:block}
+.marquee-item.logo-ap img{height:44px}
+.marquee-item.logo-dj img{height:26px}
+.marquee-item.logo-usat img{height:36px}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none;flex-wrap:wrap;width:100%;justify-content:center}}
+
+/* ============ SECTION BASICS ============ */
+.section{padding:100px 40px}
+.section-eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.section-title{font-family:var(--font-serif);font-weight:400;font-size:clamp(34px,4.2vw,54px);line-height:1.08;color:var(--navy);letter-spacing:-0.01em;margin-bottom:18px}
+.section-title em{font-style:italic;color:var(--blue)}
+.section-sub{font-size:17px;color:var(--ink-3);max-width:640px;line-height:1.65}
+
+/* ============ HOW IT WORKS ============ */
+.how-section{background:var(--cream);text-align:center}
+.how-section .section-sub{margin:0 auto 64px}
+.how-steps{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.how-steps::before{content:'';position:absolute;top:32px;left:14%;right:14%;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(0,18,51,0.18) 15%,rgba(0,18,51,0.18) 85%,transparent 100%);z-index:0}
+.how-step{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;padding:0 12px}
+.step-num{width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--font-display);font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;border:5px solid var(--cream);box-shadow:0 4px 14px rgba(0,18,51,0.15)}
+.step-title{font-weight:800;font-size:17px;color:var(--navy);margin-bottom:8px}
+.step-text{font-size:15px;line-height:1.6;color:var(--ink-3);max-width:300px}
+.how-note{max-width:760px;margin:56px auto 0;font-size:13.5px;color:var(--ink-4);line-height:1.6;border-top:1px solid rgba(0,18,51,0.1);padding-top:24px}
+
+/* ============ COURSE ============ */
+.course-section{background:#fff}
+.course-head{max-width:1320px;margin:0 auto 60px}
+.course-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+.facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:34px}
+.fact-card{background:var(--surface);border:1px solid var(--surface-2);border-radius:16px;padding:20px 22px}
+.fact-card .n{font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--navy);letter-spacing:-0.01em}
+.fact-card .n span{color:var(--blue)}
+.fact-card .l{font-size:13px;color:var(--ink-3);margin-top:5px;line-height:1.45}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pillar{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--surface-2);border-radius:14px;padding:16px 18px;transition:all .2s}
+.pillar:hover{border-color:rgba(0,110,255,.35);box-shadow:0 8px 24px rgba(0,18,51,.07)}
+.pillar .num{font-family:var(--font-serif);font-style:italic;font-size:20px;color:var(--blue);flex:none;line-height:1.3}
+.pillar .t{font-weight:700;font-size:14.5px;color:var(--navy);line-height:1.35}
+.pillar .d{font-size:12.5px;color:var(--ink-3);margin-top:3px;line-height:1.5}
+.course-side{position:relative}
+.julie-card{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(0,18,51,0.22)}
+.julie-card img{width:100%;height:560px;object-fit:cover;object-position:center 18%}
+.julie-caption{position:absolute;left:0;right:0;bottom:0;padding:110px 28px 26px;background:linear-gradient(180deg,rgba(0,18,51,0) 0%,rgba(0,18,51,0.88) 78%);color:#fff}
+.julie-caption .who{font-family:var(--font-serif);font-size:24px;line-height:1.2}
+.julie-caption .role{font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;line-height:1.5}
+.julie-caption .role strong{color:#7EC8FF}
+.trust-row{display:flex;align-items:center;gap:12px;margin-top:22px;background:var(--surface);border:1px solid var(--surface-2);border-radius:14px;padding:16px 20px}
+.trust-row .stars{color:#00B67A;font-size:16px;letter-spacing:2px}
+.trust-row .txt{font-size:13.5px;color:var(--ink-2)}
+.trust-row .txt strong{color:var(--navy)}
+.cgm-row{display:flex;align-items:center;gap:16px;margin-top:14px;background:var(--blue-light);border:1px solid rgba(0,110,255,0.18);border-radius:14px;padding:16px 20px}
+.cgm-row svg{width:26px;height:26px;color:var(--blue);flex:none}
+.cgm-row .txt{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.cgm-row .txt strong{color:var(--navy)}
+
+/* ============ PRICING ============ */
+.pricing-section{background:var(--navy);color:#fff}
+.pricing-head{max-width:1320px;margin:0 auto 56px;text-align:center}
+.pricing-section .section-title{color:#fff}
+.pricing-section .section-title em{color:#6FA8FF}
+.pricing-section .section-sub{margin:0 auto;color:rgba(255,255,255,0.75)}
+.plans{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.plan{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:22px;padding:34px 32px;display:flex;flex-direction:column;position:relative}
+.plan.recommended{background:rgba(94,182,255,0.08);border-color:rgba(126,200,255,0.4);box-shadow:0 0 44px rgba(94,182,255,0.14)}
+.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(180deg,#5EB6FF,#2E8BE6);color:#06243F;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:6px 16px;border-radius:999px;white-space:nowrap}
+.plan-name{font-size:13px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:#8FB9F0;margin-bottom:16px}
+.plan-price{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.plan-price .cur{font-size:24px;font-weight:700;color:#fff}
+.plan-price .amt{font-family:var(--font-display);font-weight:900;font-size:56px;letter-spacing:-0.02em;color:#fff;line-height:1}
+.plan-price .per{font-size:15px;color:rgba(255,255,255,0.7);font-weight:600}
+.plan-total{font-size:13.5px;color:rgba(255,255,255,0.65);margin-bottom:22px}
+.plan-total strong{color:#7EC8FF;font-weight:700}
+.plan ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:10px}
+.plan ul li{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.plan ul li svg{width:16px;height:16px;flex:none;margin-top:3px;color:#5EB6FF}
+.plan-foot{margin-top:auto;padding-top:18px;font-size:12px;color:rgba(255,255,255,0.5)}
+.pricing-fine{max-width:1000px;margin:30px auto 0;text-align:center;font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6}
+.pricing-fine a{color:#7EC8FF;font-weight:600}
+
+/* ============ FORM ============ */
+.refer-section{background:var(--cream)}
+.refer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.refer-info h2{margin-bottom:18px}
+.refer-points{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:34px}
+.refer-points li{display:flex;gap:14px;align-items:flex-start;font-size:15px;line-height:1.6;color:var(--ink-2)}
+.refer-points li svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--blue)}
+.refer-points li strong{color:var(--navy)}
+.form-card{background:#fff;border-radius:24px;padding:38px 38px 34px;box-shadow:0 30px 80px rgba(0,18,51,0.14),0 8px 24px rgba(0,18,51,0.06)}
+.form-card-title{font-family:var(--font-display);font-weight:800;font-size:24px;line-height:1.2;color:var(--navy);margin-bottom:6px;letter-spacing:-0.01em}
+.form-card-sub{font-size:14px;color:var(--ink-3);margin-bottom:26px;line-height:1.55}
+.lg-form{display:flex;flex-direction:column;gap:14px}
+.lg-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-block-label{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);margin-top:12px}
+.form-block-label::after{content:"";flex:1;height:1px;background:var(--surface-2)}
+.form-block-label:first-child{margin-top:0}
+.lg-field label{display:block;font-size:12px;font-weight:600;color:var(--ink-2);margin-bottom:6px;letter-spacing:0.02em}
+.lg-field input,.lg-field select{width:100%;padding:13px 14px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff;border:1.5px solid #E2E6EE;border-radius:10px;transition:all 0.2s;font-weight:400;appearance:auto}
+.lg-field input:focus,.lg-field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,110,255,0.12);outline:none}
+.lg-field input::placeholder{color:var(--ink-4)}
+.lg-field input[readonly]{background:var(--blue-light);border-color:rgba(0,110,255,0.25);color:var(--blue-strong);font-weight:700;cursor:default}
+.lg-consent{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--ink-3);line-height:1.5;margin-top:4px}
+.lg-consent input{margin-top:3px;accent-color:var(--blue);width:15px;height:15px;flex:none}
+.lg-submit{margin-top:10px;background:var(--blue);color:#fff;font-weight:800;font-size:16px;padding:17px 28px;border-radius:12px;font-family:inherit;letter-spacing:0.01em;transition:all 0.2s;position:relative}
+.lg-submit:hover{background:var(--blue-hover);transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,110,255,0.35)}
+.lg-disclaimer{font-size:11px;color:var(--ink-4);margin-top:12px;line-height:1.5;text-align:center}
+.form-error{display:none;background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.3);color:#b91c1c;border-radius:10px;padding:10px 14px;margin-top:12px;font-size:13px;line-height:1.5}
+.form-error.visible{display:block}
+.is-submitting .lg-submit{opacity:.7;pointer-events:none}
+.is-submitting .lg-submit::after{content:'';position:absolute;right:18px;top:50%;width:16px;height:16px;margin-top:-8px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:lg-spin .7s linear infinite}
+@keyframes lg-spin{to{transform:rotate(360deg)}}
+.form-thankyou{display:none;text-align:center;padding:26px 8px}
+.form-thankyou.visible{display:block}
+.thx-icon{width:64px;height:64px;border-radius:50%;background:rgba(0,110,255,0.1);color:var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:32px}
+.thx-title{font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--navy);margin-bottom:10px}
+.thx-body{font-size:15px;color:var(--ink-3);line-height:1.6;max-width:400px;margin:0 auto}
+
+/* ============ FAQ ============ */
+.faq-section{background:#fff}
+.faq-wrap{max-width:880px;margin:0 auto}
+.faq-head{text-align:center;margin-bottom:52px}
+.faq-item{border-bottom:1px solid var(--surface-2)}
+.faq-item summary{list-style:none;display:flex;align-items:center;gap:18px;padding:24px 4px;cursor:pointer;font-weight:700;font-size:17px;color:var(--navy)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .q-num{font-family:var(--font-serif);font-style:italic;color:var(--blue);font-size:18px;flex:none;width:30px}
+.faq-item summary .chev{margin-left:auto;flex:none;width:22px;height:22px;color:var(--ink-4);transition:transform .25s}
+.faq-item[open] summary .chev{transform:rotate(180deg);color:var(--blue)}
+.faq-a{padding:0 4px 26px 48px;font-size:15px;line-height:1.7;color:var(--ink-3)}
+
+/* ============ PRESS / BLOG ============ */
+.press-section{background:var(--surface)}
+.press-head{max-width:1320px;margin:0 auto 54px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.press-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.press-card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--surface-2);transition:all .25s;display:flex;flex-direction:column}
+.press-card:hover{transform:translateY(-5px);box-shadow:0 24px 54px rgba(0,18,51,0.13)}
+.press-thumb{position:relative;height:190px;overflow:hidden}
+.press-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.press-card:hover .press-thumb img{transform:scale(1.05)}
+.press-outlet{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,0.96);border-radius:9px;padding:7px 12px;display:flex;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,0.18)}
+.press-outlet img,.press-outlet svg{height:17px;width:auto;display:block}
+.press-outlet.po-ap img{height:22px}
+.press-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.press-date{font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-4);margin-bottom:9px}
+.press-title{font-weight:700;font-size:15.5px;line-height:1.4;color:var(--navy);margin-bottom:16px}
+.press-link{margin-top:auto;font-size:13.5px;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:7px}
+.press-link svg{width:14px;height:14px;transition:transform .2s}
+.press-card:hover .press-link svg{transform:translateX(3px)}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--navy);color:#fff;padding:70px 40px 32px}
+.footer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr 1fr 1.4fr;gap:48px}
+.footer-col h4{font-family:var(--font-display);font-size:13px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:#6FA8FF;margin-bottom:18px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a,.footer-col p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.55;transition:color 0.2s}
+.footer-col a:hover{color:#fff}
+.footer-col .out{font-weight:700;color:#9CC7FF}
+.footer-bottom{max-width:1320px;margin:52px auto 0;padding-top:28px;border-top:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.footer-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.footer-brand .fb-mark{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.95)}
+.footer-brand .fb-mark .life-blue{color:#7EC8FF;font-weight:800}
+.footer-divider{width:1px;height:24px;background:rgba(255,255,255,0.2)}
+.footer-legal{font-size:12px;color:rgba(255,255,255,0.55);display:flex;gap:18px;align-items:center}
+.footer-legal a{color:rgba(255,255,255,0.7)}
+.footer-legal a:hover{color:#fff}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.5);text-align:center;margin-top:24px;line-height:1.6}
+
+/* ============ FLOATING REFER CTA ============ */
+.lla-float-cta{
+  position:fixed;top:96px;right:32px;z-index:9999;
+  display:inline-flex;align-items:stretch;cursor:pointer;text-decoration:none;
+  font-family:'Inter',sans-serif;
+  border-radius:18px;overflow:hidden;
+  background:linear-gradient(180deg,#0F2D52 0%,#0A2240 100%);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 0 0 1px rgba(120,180,255,.18),0 14px 36px rgba(8,30,60,.28),0 0 28px rgba(120,190,255,.18);
+  opacity:0;transform:translateY(-12px);pointer-events:none;
+  transition:opacity .45s ease, transform .45s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease;
+}
+.lla-float-cta.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.lla-float-cta:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(140,200,255,.35),0 18px 44px rgba(8,30,60,.34),0 0 44px rgba(120,190,255,.42)}
+.lla-float-cta .lla-cta-text{display:flex;flex-direction:column;justify-content:center;padding:14px 18px 14px 20px;gap:4px}
+.lla-float-cta .lla-cta-eyebrow{display:flex;align-items:center;gap:8px;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8FB9F0}
+.lla-float-cta .lla-cta-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#5EB6FF;box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7);animation:llaDot 2.2s ease-in-out infinite}
+.lla-float-cta .lla-cta-title{font-size:15.5px;font-weight:700;color:#fff;letter-spacing:.1px;line-height:1.1}
+.lla-float-cta .lla-cta-pill{display:flex;align-items:center;gap:8px;padding:0 22px;margin:8px 8px 8px 6px;border-radius:12px;background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%);color:#06243F;font-weight:800;font-size:14.5px;letter-spacing:.1px;box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 20px rgba(46,139,230,.32)}
+.lla-float-cta .lla-cta-pill .price{font-size:15.5px;font-weight:900}
+.lla-float-cta .lla-cta-arrow{width:16px;height:16px;color:#06243F;transition:transform .25s ease}
+.lla-float-cta:hover .lla-cta-arrow{transform:translateX(3px)}
+
+/* ============ MOBILE ============ */
+@media (max-width: 1020px){
+  .hero-inner{grid-template-columns:1fr;gap:44px}
+  .reward-card{justify-self:start;max-width:480px}
+  .course-grid,.refer-grid{grid-template-columns:1fr;gap:48px}
+  .press-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 720px){
+  .site-header{padding:16px 18px}
+  .header-tag{display:none}
+  .brand-name{font-size:16px}
+  .brand-by{font-size:10px}
+  .hero-inner{padding:120px 20px 70px}
+  .hero-stats{flex-direction:column;gap:18px}
+  .hero-stat + .hero-stat{padding-left:0;border-left:none}
+  .hero-stat{padding-right:0}
+  .section{padding:70px 20px}
+  .how-steps{grid-template-columns:1fr;gap:36px}
+  .how-steps::before{display:none}
+  .facts-grid{grid-template-columns:1fr 1fr}
+  .pillars{grid-template-columns:1fr}
+  .plans{grid-template-columns:1fr}
+  .press-grid{grid-template-columns:1fr}
+  .form-card{padding:28px 22px}
+  .lg-row{grid-template-columns:1fr;gap:14px}
+  .footer{padding:48px 20px 28px}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:18px}
+  .marquee-track{gap:56px}
+  .marquee-item img,.marquee-item svg{height:26px}
+  .marquee-item.logo-ap img{height:34px}
+  .julie-card img{height:420px}
+  .lla-float-cta{top:12px;right:12px;left:12px;border-radius:14px}
+  .lla-float-cta .lla-cta-text{padding:10px 12px 10px 14px;flex:1;min-width:0}
+  .lla-float-cta .lla-cta-title{font-size:14px}
+  .lla-float-cta .lla-cta-eyebrow{font-size:9.5px}
+  .lla-float-cta .lla-cta-pill{padding:0 14px;margin:6px 6px 6px 4px;border-radius:10px}
+  .lla-float-cta .lla-cta-pill .price{font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="brand-lockup">
+    <div class="brand-name">Longevity <span class="life-blue">Life</span> Academy</div>
+    <div class="brand-by">by <img src="assets/eteacher-wordmark-only.png" alt="eTeacher"> Group</div>
+  </div>
+  <div class="header-right">
+    <span class="header-tag">Internal · eTeacher Group Employees</span>
+    <a href="#refer" class="header-cta">Refer &amp; earn $300</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <img src="assets/hero-referral.jpg" alt="" class="hero-bg" loading="eager" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">Employee Referral Program</span>
+      <h1 class="hero-title">Bring a student to Longevity Life Academy. <em>Earn $300.</em></h1>
+      <p class="hero-sub">This one is for us — every <strong>eTeacher Group employee</strong>, in every school and every country. Know someone in the US, Israel, or anywhere in the world who'd love to live longer and healthier? Refer them to <strong>The Longevity Blueprint</strong>, our live 18-week longevity course. When they enroll, you earn <strong>$300</strong>. Refer as many people as you like.</p>
+      <div class="hero-ctas">
+        <a href="#refer" class="btn-primary">Submit a referral <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#course" class="btn-ghost">See what they'll get</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="n">$300</div><div class="l">for every referred student who enrolls</div></div>
+        <div class="hero-stat"><div class="n">No cap</div><div class="l">refer as many friends as you like</div></div>
+        <div class="hero-stat"><div class="n">2 min</div><div class="l">is all the form takes</div></div>
+      </div>
+    </div>
+
+    <aside class="reward-card" aria-label="Referral reward summary">
+      <div class="reward-eyebrow">Your reward</div>
+      <div class="reward-amount">$300</div>
+      <div class="reward-per">per referred student who enrolls</div>
+      <ul class="reward-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Open to all eTeacher Group employees</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Your friend can join from anywhere — the course is live online</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Our admissions team does the rest — you just make the intro</li>
+      </ul>
+      <a href="#refer" class="btn-primary">Refer a friend now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+      <p class="reward-fine">Reward is paid once your referred student completes enrollment in The Longevity Blueprint.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ AS SEEN ON ============ -->
+<section class="seen-on" aria-label="Media coverage">
+  <div class="seen-on-head">
+    <div class="seen-on-title"><span class="dash">—</span> As Seen On <span class="dash">—</span></div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <a class="marquee-item logo-ap" href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener" aria-label="AP News coverage"><img src="assets/logos/ap.svg" alt="AP News"></a>
+      <a class="marquee-item" href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener" aria-label="Yahoo Finance coverage"><img src="assets/logos/yahoo-finance.svg" alt="Yahoo Finance"></a>
+      <a class="marquee-item logo-usat" href="https://www.usatoday.com/press-release/story/38313/julie-gibson-clark-2nd-slowest-aging-woman-on-earth-joins-longevity-life-academy-by-eteacher-group-to-make-elite-longevity-accessible-to-americans/" target="_blank" rel="noopener" aria-label="USA Today coverage"><img src="assets/logos/usatoday.svg" alt="USA Today"></a>
+      <a class="marquee-item logo-dj" href="https://www.digitaljournal.com/pr/news/newsfile/julie-gibson-clark-2nd-slowest-aging-1392142375.html" target="_blank" rel="noopener" aria-label="Digital Journal coverage"><img src="assets/logos/digitaljournal.png" alt="Digital Journal"></a>
+      <a class="marquee-item" href="https://www.barchart.com/story/news/3429825/julie-gibson-clark-who-out-aged-bryan-johnson-at-the-rejuvenation-olympics-joins-eteachers-longevity-life-academy-faculty" target="_blank" rel="noopener" aria-label="Barchart coverage"><img src="assets/logos/barchart.svg" alt="Barchart"></a>
+      <a class="marquee-item" href="https://www.streetinsider.com/The+Financial+Capital/Julie+Gibson+Clark+%E2%80%94+Who+Out-Aged+Bryan+Johnson+at+the+Rejuvenation+Olympics+%E2%80%94+Joins+eTeacher%27s+Longevity+Life+Academy+Faculty/26806449.html" target="_blank" rel="noopener" aria-label="StreetInsider coverage"><svg viewBox="0 0 300 40" role="img" aria-label="StreetInsider.com"><text x="0" y="29" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="27" fill="#0A2240">Street<tspan fill="#006EFF">Insider</tspan><tspan font-size="19" fill="#5A6472">.com</tspan></text></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section how-section">
+  <span class="section-eyebrow">How it works</span>
+  <h2 class="section-title">Three steps. <em>Two minutes.</em> $300.</h2>
+  <p class="section-sub">You make the introduction — our admissions team handles everything else, in the same personal way we welcome every eTeacher student.</p>
+  <div class="how-steps">
+    <div class="how-step">
+      <div class="step-num">1</div>
+      <div class="step-title">Submit your friend's details</div>
+      <p class="step-text">Fill in the referral form below with your details and theirs. Make sure they're happy to hear from us first.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-num">2</div>
+      <div class="step-title">Admissions reaches out</div>
+      <p class="step-text">Our team gives them a personal welcome, answers every question, and helps them pick the next available cohort.</p>
+    </div>
+    <div class="how-step">
+      <div class="step-num">3</div>
+      <div class="step-title">They enroll — you earn $300</div>
+      <p class="step-text">Once their enrollment in The Longevity Blueprint is complete, your $300 reward is confirmed and paid out.</p>
+    </div>
+  </div>
+  <p class="how-note">Open to all eTeacher Group employees. The reward is paid per referred student who completes enrollment in The Longevity Blueprint. There is no limit on how many people you can refer. Referrals are tracked through this form only — make sure your name is on the submission.</p>
+</section>
+
+<!-- ============ COURSE ============ -->
+<section class="section course-section" id="course">
+  <div class="course-head">
+    <span class="section-eyebrow">What you're referring them to</span>
+    <h2 class="section-title">The Longevity Blueprint — <em>a protocol built on their numbers.</em></h2>
+    <p class="section-sub">Longevity Life Academy by eTeacher Group is our dedicated school for healthy aging. Its flagship course is a live, guided program built around each student's own biology, numbers, and daily practice — taught by the same live, small-class method that powers every eTeacher school.</p>
+  </div>
+  <div class="course-grid">
+    <div>
+      <div class="facts-grid">
+        <div class="fact-card"><div class="n">18 <span>weeks</span></div><div class="l">Live online course — one 50-minute session every week</div></div>
+        <div class="fact-card"><div class="n">18 <span>live sessions</span></div><div class="l">Across 4 phases: Foundation, Data &amp; Discovery, Lifestyle Systems, Integration &amp; Blueprint</div></div>
+        <div class="fact-card"><div class="n">8–15 <span>per class</span></div><div class="l">Small live cohorts — an instructor who knows every student by name</div></div>
+        <div class="fact-card"><div class="n">100% <span>recorded</span></div><div class="l">Every session is recorded and available on demand</div></div>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><div class="num">01</div><div><div class="t">Nutrition</div><div class="d">Plant-forward, nutrient-dense patterns that fight inflammation and support cellular rejuvenation.</div></div></div>
+        <div class="pillar"><div class="num">02</div><div><div class="t">Sleep</div><div class="d">Science-backed protocols to optimize sleep architecture, recovery, and circadian rhythm.</div></div></div>
+        <div class="pillar"><div class="num">03</div><div><div class="t">Exercise &amp; Movement</div><div class="d">Functional strength, Zone 2 endurance, and stability for lifespan and healthspan.</div></div></div>
+        <div class="pillar"><div class="num">04</div><div><div class="t">Supplements &amp; Wearables</div><div class="d">Evidence-backed compounds targeted at real biomarker gaps — plus CGM, HRV, and sleep data.</div></div></div>
+        <div class="pillar"><div class="num">05</div><div><div class="t">Stress Management</div><div class="d">Breathwork, cold exposure, vagal tone training, and connection — regulation you can measure.</div></div></div>
+        <div class="pillar"><div class="num">06</div><div><div class="t">Your Longevity Protocol</div><div class="d">A written, personalized protocol built from their own bloodwork, biomarkers, and wearable data.</div></div></div>
+      </div>
+      <div class="cgm-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h4l2-5 3 10 2-5h6"/></svg>
+        <div class="txt"><strong>Free Abbott Lingo continuous glucose monitor</strong> — shipped to every US student's door before Lesson 5, with 14 days of app access to track their live glucose response.</div>
+      </div>
+      <div class="trust-row">
+        <span class="stars">★★★★★</span>
+        <span class="txt"><strong>4.6 / 5 on Trustpilot</strong> · 600+ verified reviews</span>
+      </div>
+    </div>
+    <div class="course-side">
+      <div class="julie-card">
+        <img src="assets/julie-goldenhour.jpg" alt="Julie Gibson Clark, founding faculty member at Longevity Life Academy">
+        <div class="julie-caption">
+          <div class="who">Julie Gibson Clark</div>
+          <div class="role"><strong>Founding faculty.</strong> The 2nd slowest-aging woman on Earth — she held #2 on the Rejuvenation Olympics leaderboard for over a year, ahead of Bryan Johnson. Your friends learn live from her and a named faculty of longevity researchers and practitioners.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section pricing-section" id="pricing">
+  <div class="pricing-head">
+    <span class="section-eyebrow" style="color:#7EC8FF">Tuition</span>
+    <h2 class="section-title">Simple, transparent <em>pricing.</em></h2>
+    <p class="section-sub">Both plans unlock the complete program — weekly live sessions, the free continuous glucose monitor, and the personal protocol your friend walks away with.</p>
+  </div>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-name">Plan A · Monthly</div>
+      <div class="plan-price"><span class="cur">$</span><span class="amt">289</span><span class="per">/ mo × 5</span></div>
+      <div class="plan-total">Program total (5 × $289): <strong>$1,445</strong> · monthly billing</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>18 weeks live online — weekly 50-minute sessions with longevity expert teachers</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Small class of 8–15 adults</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free continuous glucose monitor shipped before Lesson 5</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Six pillars curriculum + full course access and recordings</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Their written personal longevity protocol — theirs to keep</li>
+      </ul>
+      <div class="plan-foot">Cancel anytime · No setup fee</div>
+    </div>
+    <div class="plan recommended">
+      <div class="plan-badge">Most chosen</div>
+      <div class="plan-name">Plan B · Upfront</div>
+      <div class="plan-price"><span class="cur">$</span><span class="amt">1,249</span><span class="per">one-time</span></div>
+      <div class="plan-total">Save <strong>$196</strong> versus 5 monthly payments</div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Everything in the monthly plan — same program, same access</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One payment of $1,249 instead of $1,445</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free continuous glucose monitor shipped before Lesson 5</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Six pillars curriculum + full course access and recordings</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Their written personal longevity protocol — theirs to keep</li>
+      </ul>
+      <div class="plan-foot">One-time payment · No hidden fees</div>
+    </div>
+  </div>
+  <p class="pricing-fine">Seats are limited and offered first-come, first-served. Full details at <a href="https://www.longevitylifeacademy.com/pricing.html" target="_blank" rel="noopener">longevitylifeacademy.com/pricing</a>.</p>
+</section>
+
+<!-- ============ REFERRAL FORM ============ -->
+<section class="section refer-section" id="refer">
+  <div class="refer-grid">
+    <div class="refer-info">
+      <span class="section-eyebrow">Submit a referral</span>
+      <h2 class="section-title">Refer someone <em>you believe in.</em></h2>
+      <p class="section-sub">Tell us who you are and who you're referring. Our admissions team reaches out with a personal welcome — and your $300 reward is confirmed the moment they complete enrollment.</p>
+      <ul class="refer-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><strong>Anyone, anywhere.</strong> Friends, family, former colleagues — from the US, Israel, or any of the nearly 200 countries eTeacher teaches in.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg><span><strong>$300 per enrollment.</strong> Paid out after your referred student completes enrollment in The Longevity Blueprint. No cap.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><strong>Handled with care.</strong> One personal call from admissions — no spam, no pressure. If it's not for them, we leave it there.</span></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <div id="referForm-wrap">
+        <h2 class="form-card-title">Employee referral form</h2>
+        <p class="form-card-sub">Takes about two minutes. Fields marked * are required.</p>
+
+        <form id="referForm" class="lg-form form-with-thankyou" data-thankyou-target="referThx" novalidate>
+          <div class="form-block-label">About you — the referrer</div>
+          <div class="lg-row">
+            <div class="lg-field">
+              <label for="ref-fname">Your First Name *</label>
+              <input id="ref-fname" name="refFirstName" type="text" autocomplete="given-name" placeholder="Your first name" required>
+            </div>
+            <div class="lg-field">
+              <label for="ref-lname">Your Last Name *</label>
+              <input id="ref-lname" name="refLastName" type="text" autocomplete="family-name" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="lg-row">
+            <div class="lg-field">
+              <label for="ref-email">Your eTeacher Work Email *</label>
+              <input id="ref-email" name="refEmail" type="email" placeholder="you@eteachergroup.com" required>
+            </div>
+            <div class="lg-field">
+              <label for="ref-referral">Employee Referral</label>
+              <input id="ref-referral" name="employeeReferral" type="text" value="Yes" readonly aria-readonly="true">
+            </div>
+          </div>
+
+          <div class="form-block-label">About your friend — the future student</div>
+          <div class="lg-row">
+            <div class="lg-field">
+              <label for="lg-fname">Their First Name *</label>
+              <input id="lg-fname" name="firstName" type="text" placeholder="Their first name" required>
+            </div>
+            <div class="lg-field">
+              <label for="lg-lname">Their Last Name *</label>
+              <input id="lg-lname" name="lastName" type="text" placeholder="Their last name" required>
+            </div>
+          </div>
+          <div class="lg-field">
+            <label for="lg-email">Their Email *</label>
+            <input id="lg-email" name="email" type="email" placeholder="friend@email.com" required>
+          </div>
+          <div class="lg-row">
+            <div class="lg-field">
+              <label for="lg-country">Their Country *</label>
+              <select id="lg-country" name="country" required>
+                <option value="US" selected>United States (+1)</option>
+                <option value="CA">Canada (+1)</option>
+                <option value="GB">United Kingdom (+44)</option>
+                <option value="AU">Australia (+61)</option>
+                <option value="IL">Israel (+972)</option>
+                <option value="FR">France (+33)</option>
+                <option value="DE">Germany (+49)</option>
+                <option value="ES">Spain (+34)</option>
+                <option value="IT">Italy (+39)</option>
+                <option value="MX">Mexico (+52)</option>
+                <option value="BR">Brazil (+55)</option>
+                <option value="ZA">South Africa (+27)</option>
+                <option value="IN">India (+91)</option>
+                <option value="AE">UAE (+971)</option>
+                <option value="SG">Singapore (+65)</option>
+                <option value="PH">Philippines (+63)</option>
+              </select>
+            </div>
+            <div class="lg-field">
+              <label for="lg-phone">Their Mobile Phone *</label>
+              <input id="lg-phone" name="phone" type="tel" placeholder="201-555-0123" required>
+            </div>
+          </div>
+          <div class="lg-row">
+            <div class="lg-field">
+              <label for="lg-state">State (if in the US)</label>
+              <select id="lg-state" name="state">
+                <option value="" selected>Select a state</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Washington, D.C.</option><option value="Outside the US">Outside the US</option>
+              </select>
+            </div>
+            <div class="lg-field">
+              <label for="lg-start">When would they like to start learning? *</label>
+              <select id="lg-start" name="startWhen" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>As soon as possible</option>
+                <option>Within a month</option>
+                <option>In 1–3 months</option>
+                <option>Not sure yet — just exploring</option>
+              </select>
+            </div>
+          </div>
+          <label class="lg-consent">
+            <input type="checkbox" id="lg-consent" required>
+            <span>I confirm my friend is happy to hear from Longevity Life Academy about The Longevity Blueprint. *</span>
+          </label>
+
+          <button type="submit" class="lg-submit">Submit referral — earn $300</button>
+          <p class="lg-disclaimer">Internal eTeacher Group program. Your reward is confirmed once your referred student completes enrollment.</p>
+        </form>
+
+        <div id="referThx" class="form-thankyou" role="status" aria-live="polite">
+          <div class="thx-icon">✓</div>
+          <div class="thx-title">Referral received</div>
+          <p class="thx-body">Thank you. Our admissions team will reach out to your friend with a personal welcome. We'll confirm your $300 reward as soon as their enrollment is complete.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq-section" id="faq">
+  <div class="faq-wrap">
+    <div class="faq-head">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">Questions <em>worth answering.</em></h2>
+    </div>
+
+    <details class="faq-item">
+      <summary><span class="q-num">01</span>Who can participate in the referral program?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Every eTeacher Group employee, across all of our schools and offices, in every country. Your referred student can live anywhere too — The Longevity Blueprint is taught live online.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">02</span>How and when do I get my $300?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Your reward is confirmed once the person you referred completes enrollment in The Longevity Blueprint. Payouts are processed by HR/payroll in the pay cycle after enrollment is confirmed. There is no cap — every enrolled referral earns you $300.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">03</span>Who is the course for?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">For ambitious people who want to optimize their health, energy, and longevity through science-backed nutrition, exercise, recovery, and biomarker tracking. Perfect for high performers, wellness enthusiasts, and anyone ready to take a proactive approach to living longer and feeling better.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">04</span>Does my friend need a medical background?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">No. The course is designed for anyone interested in improving their health, energy, and longevity. No medical, scientific, or fitness background is needed — complex topics are broken down into practical, easy-to-understand concepts applied through simple tracking, actionable exercises, and personalized insights.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">05</span>What happens in a typical session?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Each week is a 50-minute live session with expert instructors and a community of like-minded people. Sessions combine science-backed learning, real biomarker and CGM data analysis, and interactive discussion around nutrition, movement, sleep, and recovery — and every student leaves with a personalized experiment to run during the week.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">06</span>How much does the course cost?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Two plans, same program: $289/month across 5 monthly installments ($1,445 total), or a one-time upfront payment of $1,249 (saving $196). Tuition includes all 18 live sessions, full platform access, the continuous glucose monitor, and shipping. Seats are limited, first-come, first-served.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">07</span>What equipment does my friend need?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Just a laptop or tablet for live sessions and a smartphone to track progress. The continuous glucose monitor is included with enrollment and ships directly to their door, arriving before Lesson 5, when the CGM portion of the program begins. Smartwatches and other wearables are completely optional.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">08</span>Can they catch up if they miss a session?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">Absolutely. All sessions are recorded and available on demand. Attending live is recommended for the expert guidance and class discussion, but every session and all course materials can be reviewed whenever their schedule allows.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span class="q-num">09</span>Is this medical advice?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="faq-a">No. The program is educational and focused on understanding the science of longevity, nutrition, movement, recovery, and biomarker tracking. It does not diagnose, treat, or provide clinical care. For medical concerns or clinical decisions, students should continue working with their physician.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ PRESS / BLOG ============ -->
+<section class="section press-section" id="press">
+  <div class="press-head">
+    <div>
+      <span class="section-eyebrow">In the news</span>
+      <h2 class="section-title">The coverage your friends <em>will Google.</em></h2>
+      <p class="section-sub">Longevity Life Academy is making national headlines. Read the top stories — and send them along with your referral.</p>
+    </div>
+  </div>
+  <div class="press-grid">
+    <a class="press-card" href="blog/ap-news-launch.html">
+      <div class="press-thumb">
+        <img src="assets/hero-cgm.jpg" alt="Longevity Life Academy launch story">
+        <span class="press-outlet po-ap"><img src="assets/logos/ap.svg" alt="AP News"></span>
+      </div>
+      <div class="press-body">
+        <div class="press-date">AP News · July 19, 2026</div>
+        <div class="press-title">eTeacher Group Launches Longevity Life Academy to Teach the Longevity Protocol the Wealthy Pay Millions For</div>
+        <span class="press-link">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <a class="press-card" href="blog/ap-news-julie-faculty.html">
+      <div class="press-thumb">
+        <img src="assets/julie-standing.jpg" alt="Julie Gibson Clark joins Longevity Life Academy faculty" style="object-position:center 18%">
+        <span class="press-outlet po-ap"><img src="assets/logos/ap.svg" alt="AP News"></span>
+      </div>
+      <div class="press-body">
+        <div class="press-date">AP News · July 23, 2026</div>
+        <div class="press-title">Julie Gibson Clark — Who Out-Aged Bryan Johnson at the Rejuvenation Olympics — Joins eTeacher's Longevity Life Academy Faculty</div>
+        <span class="press-link">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <a class="press-card" href="blog/yahoo-finance.html">
+      <div class="press-thumb">
+        <img src="assets/julie-portrait.jpg" alt="Julie Gibson Clark, Longevity Life Academy" style="object-position:center 20%">
+        <span class="press-outlet"><img src="assets/logos/yahoo-finance.svg" alt="Yahoo Finance"></span>
+      </div>
+      <div class="press-body">
+        <div class="press-date">Yahoo Finance · July 27, 2026</div>
+        <div class="press-title">Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth, Joins Longevity Life Academy to Make Elite Longevity Accessible</div>
+        <span class="press-link">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <a class="press-card" href="blog/usa-today.html">
+      <div class="press-thumb">
+        <img src="assets/julie-coffee.jpg" alt="Julie Gibson Clark featured in USA Today" style="object-position:center 25%">
+        <span class="press-outlet"><img src="assets/logos/usatoday.svg" alt="USA Today"></span>
+      </div>
+      <div class="press-body">
+        <div class="press-date">USA Today · July 27, 2026</div>
+        <div class="press-title">An Accessible-Longevity Advocate on $12 a Day Joins a 25-Year Education Company to Democratize Healthspan</div>
+        <span class="press-link">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><p>Longevity Life Academy</p></li>
+        <li><p>by eTeacher Group</p></li>
+        <li><p>Support: <a href="mailto:support@longevitylifeacademy.com">support@longevitylifeacademy.com</a></p></li>
+        <li><p>Referral program questions:<br><a href="mailto:hr@eteachergroup.com">hr@eteachergroup.com</a></p></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Longevity Life Academy</h4>
+      <ul>
+        <li><a href="https://www.longevitylifeacademy.com/" target="_blank" rel="noopener">Official Website</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/about.html" target="_blank" rel="noopener">About</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/index.html#syllabus" target="_blank" rel="noopener">Curriculum</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/pricing.html" target="_blank" rel="noopener">Pricing</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/cgm.html" target="_blank" rel="noopener">Continuous Glucose Monitor</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/biological-age-light.html" target="_blank" rel="noopener">Biological Age Quiz</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.longevitylifeacademy.com/blog.html" target="_blank" rel="noopener">The Longevity Blog</a></li>
+        <li><a href="https://www.longevitylifeacademy.com/index.html#faq" target="_blank" rel="noopener">Course FAQ</a></li>
+        <li><a href="#refer">Submit a Referral</a></li>
+        <li><a href="banners/index.html">Campaign Banners (internal)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>LLA in the News</h4>
+      <ul>
+        <li><a href="https://apnews.com/press-release/ein-presswire-newsmatics/press-release-df2283f31104321eae816839632a3c48" target="_blank" rel="noopener"><span class="out">AP News</span> — eTeacher Group Launches Longevity Life Academy</a></li>
+        <li><a href="https://apnews.com/press-release/marketersmedia/press-release-a8ed3ee45cf963d309db5995e4de2ced" target="_blank" rel="noopener"><span class="out">AP News</span> — Julie Gibson Clark Joins LLA Faculty</a></li>
+        <li><a href="https://finance.yahoo.com/healthcare/articles/julie-gibson-clark-2nd-slowest-195800053.html" target="_blank" rel="noopener"><span class="out">Yahoo Finance</span> — Julie Gibson Clark, 2nd Slowest-Aging Woman on Earth</a></li>
+        <li><a href="https://www.usatoday.com/press-release/story/38313/julie-gibson-clark-2nd-slowest-aging-woman-on-earth-joins-longevity-life-academy-by-eteacher-group-to-make-elite-longevity-accessible-to-americans/" target="_blank" rel="noopener"><span class="out">USA Today</span> — Making Elite Longevity Accessible to Americans</a></li>
+        <li><a href="https://www.digitaljournal.com/pr/news/newsfile/julie-gibson-clark-2nd-slowest-aging-1392142375.html" target="_blank" rel="noopener"><span class="out">Digital Journal</span> — Julie Gibson Clark Joins LLA</a></li>
+        <li><a href="https://www.barchart.com/story/news/3429825/julie-gibson-clark-who-out-aged-bryan-johnson-at-the-rejuvenation-olympics-joins-eteachers-longevity-life-academy-faculty" target="_blank" rel="noopener"><span class="out">Barchart</span> — Julie Out-Aged Bryan Johnson at the Rejuvenation Olympics</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-brand">
+      <div class="fb-mark">Longevity <span class="life-blue">Life</span> Academy</div>
+      <div class="footer-divider"></div>
+      <div class="footer-legal">
+        <a href="https://www.longevitylifeacademy.com/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.longevitylifeacademy.com/terms.html" target="_blank" rel="noopener">Terms and Conditions</a>
+      </div>
+    </div>
+    <div class="footer-legal">Internal campaign · eTeacher Group employees only</div>
+  </div>
+  <p class="footer-copy">© 2026 Longevity Life Academy, an eTeacher Group brand. All rights reserved.<br>Not medical advice. Education only.</p>
+</footer>
+
+<!-- ============ FLOATING REFER CTA ============ -->
+<a href="#refer" class="lla-float-cta" id="llaFloatCta" aria-label="Refer a friend — earn $300">
+  <span class="lla-cta-text">
+    <span class="lla-cta-eyebrow">Employee Referral</span>
+    <span class="lla-cta-title">Refer a Friend</span>
+  </span>
+  <span class="lla-cta-pill">
+    <span class="price">Earn $300</span>
+    <svg class="lla-cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+  </span>
+</a>
+<script>
+(function(){
+  var cta=document.getElementById('llaFloatCta');
+  if(!cta) return;
+  function onScroll(){if(window.scrollY>140){cta.classList.add('is-visible')}else{cta.classList.remove('is-visible')}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  setTimeout(function(){cta.classList.add('is-visible')},800);
+  onScroll();
+  cta.addEventListener('click',function(e){
+    e.preventDefault();
+    var lead=document.getElementById('refer');
+    if(lead){lead.scrollIntoView({behavior:'smooth',block:'start'});
+      var first=lead.querySelector('input');
+      if(first){setTimeout(function(){try{first.focus({preventScroll:true})}catch(_){}},700);}
+    }
+  });
+})();
+</script>
+
+<!-- ============ CRM LEAD-GEN WIRING ============ -->
+<!-- Cloudflare Worker → AWS SQS → eTeacher CRM (same proxy used on longevitylifeacademy.com) -->
+<script>
+(function(){
+  var ETEACHER_ENV = 'production';
+  var ENDPOINTS = {
+    staging:    'https://eteacher-leads-proxy.gitter-omri.workers.dev/leads/staging',
+    production: 'https://eteacher-leads-proxy.gitter-omri.workers.dev/leads/production'
+  };
+  var ipCountryPromise = null;
+  function getIpCountry(){
+    if (ipCountryPromise) return ipCountryPromise;
+    ipCountryPromise = fetch('https://ipapi.co/country/', { method:'GET', cache:'force-cache' })
+      .then(function(r){ return r.ok ? r.text() : ''; })
+      .then(function(t){ t=(t||'').trim().toUpperCase(); return /^[A-Z]{2}$/.test(t) ? t : ''; })
+      .catch(function(){ return ''; });
+    return ipCountryPromise;
+  }
+  function isValidEmail(s){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s); }
+
+  var ATTR_KEYS = ['gclid','fbclid','msclkid','ttclid','li_fat_id','wbraid','gbraid','utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  var ATTR_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+  var ATTR_STORAGE_KEY = 'lla_attribution_v1';
+  function readAttributionStorage(){
+    try {
+      var raw = localStorage.getItem(ATTR_STORAGE_KEY);
+      if (!raw) return null;
+      var obj = JSON.parse(raw);
+      if (!obj || !obj.ts || (Date.now() - obj.ts) > ATTR_TTL_MS) return null;
+      return obj;
+    } catch(e) { return null; }
+  }
+  function captureAttribution(){
+    try {
+      var params = new URLSearchParams(window.location.search || '');
+      var found = {}; var hasAny = false;
+      ATTR_KEYS.forEach(function(k){ var v = params.get(k); if (v) { found[k] = v; hasAny = true; } });
+      if (hasAny) {
+        found.ts = Date.now();
+        found.first_landing = window.location.href;
+        found.first_referrer = document.referrer || '';
+        try { localStorage.setItem(ATTR_STORAGE_KEY, JSON.stringify(found)); } catch(e){}
+        return found;
+      }
+      return readAttributionStorage();
+    } catch(e) { return null; }
+  }
+  var _cachedAttribution = captureAttribution();
+  function getAttribution(){ return _cachedAttribution || readAttributionStorage(); }
+  function buildDynamicParameters(attr){
+    if (!attr) return '';
+    var pairs = [];
+    ATTR_KEYS.forEach(function(k){ if (attr[k]) pairs.push(k + '=' + attr[k]); });
+    return pairs.join(';');
+  }
+  function postWithRetry(url, payload, attempt){
+    attempt = attempt || 1;
+    return fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json','Accept':'application/json' }, body: JSON.stringify(payload), credentials:'omit', mode:'cors' })
+      .then(function(res){
+        if (res.status === 200) return { ok:true, status:200 };
+        if (res.status >= 400 && res.status < 500) return { ok:false, status:res.status, retryable:false };
+        if (attempt < 3) { var d = Math.pow(2, attempt-1)*1000; return new Promise(function(r){ setTimeout(function(){ r(postWithRetry(url, payload, attempt+1)); }, d); }); }
+        return { ok:false, status:res.status, retryable:true };
+      })
+      .catch(function(err){
+        if (attempt < 3) { var d = Math.pow(2, attempt-1)*1000; return new Promise(function(r){ setTimeout(function(){ r(postWithRetry(url, payload, attempt+1)); }, d); }); }
+        return { ok:false, status:0, retryable:true, error:String(err) };
+      });
+  }
+  window.eTeacherLeads = {
+    endpoint: ENDPOINTS[ETEACHER_ENV],
+    env: ETEACHER_ENV,
+    getAttribution: getAttribution,
+    submit: function(fields){
+      if (!fields || !fields.firstName || !fields.lastName || !isValidEmail(fields.email||'') || !fields.phone || !fields.countryIso) {
+        return Promise.resolve({ ok:false, status:0, error:'Missing or invalid fields' });
+      }
+      return getIpCountry().then(function(ipCountry){
+        var payload = {
+          ProductID: 26,
+          FirstName: String(fields.firstName).trim(),
+          LastName:  String(fields.lastName).trim(),
+          Email:     String(fields.email).trim(),
+          MobilePhone: String(fields.phone).trim(),
+          CountryIsoCode: String(fields.countryIso).toUpperCase(),
+          LandingPage: window.location.href,
+          UserAgent: navigator.userAgent,
+          ReferringSite: document.referrer || window.location.hostname,
+          QueryString: (window.location.search || '').replace(/^\?/, '')
+        };
+        if (ipCountry) payload.CountryIsoCodeByIp = ipCountry;
+        if (fields.adminNotes) payload.AdminNotes = String(fields.adminNotes).slice(0, 4000);
+        var attr = getAttribution();
+        var dyn = buildDynamicParameters(attr);
+        if (fields.dynamicExtra) {
+          dyn = (dyn ? dyn + ';' : '') + fields.dynamicExtra;
+        }
+        if (dyn) payload.DynamicParameters = dyn.slice(0, 4000);
+        if (fields.campaignId && /^\d+$/.test(String(fields.campaignId))) {
+          payload.CampaignID = parseInt(fields.campaignId, 10);
+        }
+        return postWithRetry(ENDPOINTS[ETEACHER_ENV], payload);
+      });
+    }
+  };
+})();
+</script>
+
+<script>
+(function(){
+  function getValue(form, name){ var el = form.querySelector('[name="'+name+'"]'); return el ? el.value : ''; }
+  function showError(form, msg){
+    var box = form.querySelector('.form-error');
+    if (!box) {
+      box = document.createElement('div');
+      box.className = 'form-error';
+      box.setAttribute('role','alert');
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn && submitBtn.parentNode) submitBtn.parentNode.insertBefore(box, submitBtn.nextSibling);
+      else form.appendChild(box);
+    }
+    box.textContent = msg; box.classList.add('visible');
+  }
+  function clearError(form){ var b = form.querySelector('.form-error'); if (b) b.classList.remove('visible'); }
+  function showThankYou(form){
+    var targetId = form.getAttribute('data-thankyou-target');
+    var thx = targetId ? document.getElementById(targetId) : form.parentNode.querySelector('.form-thankyou');
+    if (!thx) return;
+    form.style.display = 'none';
+    thx.classList.add('visible');
+    try { thx.scrollIntoView({ behavior:'smooth', block:'center' }); } catch(err){}
+  }
+  var form = document.getElementById('referForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    clearError(form);
+    var refFirst = getValue(form,'refFirstName').trim();
+    var refLast  = getValue(form,'refLastName').trim();
+    var refEmail = getValue(form,'refEmail').trim();
+    var state    = getValue(form,'state');
+    var startWhen= getValue(form,'startWhen');
+    var consent  = form.querySelector('#lg-consent');
+    var fields = {
+      firstName:  getValue(form, 'firstName').trim(),
+      lastName:   getValue(form, 'lastName').trim(),
+      email:      getValue(form, 'email').trim(),
+      phone:      getValue(form, 'phone').trim(),
+      countryIso: getValue(form, 'country'),
+      campaignId: ''
+    };
+    if (!refFirst || !refLast || !refEmail) { showError(form, 'Please fill in your own details — name and eTeacher work email.'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refEmail)) { showError(form, 'Please enter a valid work email address for yourself.'); return; }
+    if (!fields.firstName || !fields.lastName || !fields.email || !fields.phone || !fields.countryIso) { showError(form, 'Please fill in all required fields for your friend.'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) { showError(form, "Please enter a valid email address for your friend."); return; }
+    if (!startWhen) { showError(form, 'Please choose when your friend would like to start learning.'); return; }
+    if (consent && !consent.checked) { showError(form, 'Please confirm your friend is happy to hear from us.'); return; }
+
+    fields.adminNotes = 'EMPLOYEE REFERRAL PROGRAM (internal) — Employee Referral: Yes'
+      + ' | Referrer: ' + refFirst + ' ' + refLast + ' <' + refEmail + '>'
+      + ' | Reward: $300 on completed enrollment'
+      + (state ? ' | Referee state: ' + state : '')
+      + ' | Preferred start: ' + startWhen
+      + ' | Source: Employee Referral LP';
+    fields.dynamicExtra = 'employee_referral=yes;referrer_email=' + encodeURIComponent(refEmail);
+
+    form.classList.add('is-submitting');
+    window.eTeacherLeads.submit(fields).then(function(res){
+      form.classList.remove('is-submitting');
+      if (res.ok) {
+        try { if (window.dataLayer) { window.dataLayer.push({ event:'lead_form_submit', form_id:'referForm', crm_status:'ok', env: window.eTeacherLeads.env }); } } catch(err){}
+        showThankYou(form);
+      } else {
+        try { if (window.dataLayer) { window.dataLayer.push({ event:'lead_form_submit_error', form_id:'referForm', crm_status: res.status, env: window.eTeacherLeads.env }); } } catch(err){}
+        showError(form, 'Something went wrong. Please try again.');
+      }
+    });
+  });
+})();
+</script>
+
+<script>
+/* Duplicate marquee content for a seamless infinite loop */
+(function(){
+  var track = document.getElementById('marqueeTrack');
+  if (!track) return;
+  track.innerHTML += track.innerHTML;
+})();
+</script>
+
+</body>
+</html>
