@@ -1,39 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{width:1200px;height:628px;overflow:hidden;font-family:'Inter',sans-serif}
-.banner{position:relative;width:1200px;height:628px;background:#F7F4EC;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
-.copy{position:relative;z-index:2;padding:64px 30px 64px 60px;display:flex;flex-direction:column;justify-content:center}
-.brand{font-weight:600;font-size:19px;letter-spacing:.08em;text-transform:uppercase;color:#001233}
-.brand .life{color:#006EFF;font-weight:800}
-.byline{font-size:12.5px;color:#5A6472;margin:6px 0 32px;letter-spacing:.04em}
-h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:58px;line-height:1.06;color:#001233;margin-bottom:20px}
-h1 em{font-style:italic;color:#006EFF}
-.sub{font-size:19px;line-height:1.55;color:#2A2F36;max-width:520px;margin-bottom:30px}
-.sub strong{color:#001233}
-.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%);color:#06243F;font-weight:800;font-size:19px;padding:17px 34px;border-radius:14px;width:max-content;box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 10px 26px rgba(46,139,230,.30)}
-.photo{position:relative;overflow:hidden}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
-.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#F7F4EC 0%,rgba(247,244,236,0) 22%)}
-.chip{position:absolute;left:60px;top:56px;z-index:3;display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#0051CC;padding:9px 18px;border:1px solid rgba(0,110,255,.35);border-radius:999px;background:rgba(0,110,255,.07)}
-.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:#006EFF;box-shadow:0 0 8px rgba(0,110,255,.8)}
-</style>
-</head>
-<body>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:628px;overflow:hidden;font-family:'Inter',sans-serif;background:#02112C}
+.banner{position:relative;width:1200px;height:628px}
+.photo{position:absolute;top:0;right:0;width:520px;height:628px;object-fit:cover;object-position:center 20%}
+.scrim{position:absolute;inset:0;background:linear-gradient(90deg,#02112C 0%,#02112C 40%,rgba(2,17,44,0.88) 52%,rgba(2,17,44,0.25) 72%,rgba(2,17,44,0.05) 100%)}
+.content{position:absolute;inset:0;padding:42px 0 40px 56px;width:660px;display:flex;flex-direction:column}
+.logo{height:110px;align-self:flex-start;filter:drop-shadow(0 4px 16px rgba(0,0,0,0.5));margin-bottom:24px}
+.head{font-size:57px;font-weight:900;color:#fff;letter-spacing:-0.02em;line-height:1.05}
+.head .blue{color:#7EC8FF}
+.sub{font-size:19.5px;font-weight:600;color:rgba(255,255,255,0.88);margin-top:14px;line-height:1.5;max-width:560px}
+.facts{display:flex;gap:0;margin-top:26px;border:1px solid rgba(126,200,255,0.35);border-radius:12px;overflow:hidden;width:560px;background:rgba(255,255,255,0.05)}
+.fact{flex:1;padding:13px 10px;text-align:center}
+.fact + .fact{border-left:1px solid rgba(126,200,255,0.28)}
+.fact .n{font-family:'Instrument Serif',Georgia,serif;font-size:27px;color:#fff;line-height:1}
+.fact .n em{font-style:italic;color:#7EC8FF}
+.fact .l{font-size:11.5px;font-weight:700;color:rgba(255,255,255,0.68);margin-top:5px;letter-spacing:0.03em}
+.cta-row{display:flex;align-items:center;gap:18px;margin-top:28px}
+.cta{background:linear-gradient(135deg,#2E91FF 0%,#0066FF 100%);color:#fff;font-size:22px;font-weight:800;padding:16px 38px;border-radius:12px;box-shadow:0 10px 30px rgba(20,110,240,0.5)}
+.cta-note{font-size:15px;font-weight:800;color:#7EC8FF;letter-spacing:0.1em;text-transform:uppercase}
+.credit{position:absolute;right:22px;bottom:16px;font-size:12.5px;font-weight:700;color:rgba(255,255,255,0.85);background:rgba(2,17,44,0.55);padding:7px 12px;border-radius:8px}
+</style></head><body>
 <div class="banner">
-  <span class="chip">Employee Referral · $300 Reward</span>
-  <div class="copy">
-    <div class="brand">Longevity <span class="life">Life</span> Academy</div>
-    <div class="byline">by eTeacher Group</div>
-    <h1>Help someone you love <em>live longer.</em></h1>
-    <p class="sub">Refer them to <strong>The Longevity Blueprint</strong> — 18 weeks, live classes, a personal longevity protocol. When they enroll, you earn <strong>$300</strong>.</p>
-    <span class="cta">Submit Your Referral →</span>
+  <img class="photo" src="../assets/julie-goldenhour-crop.jpg" alt="Julie Gibson Clark">
+  <div class="scrim"></div>
+  <div class="content">
+    <img class="logo" src="../assets/lla-logo-exact-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group">
+    <div class="head">Help someone you love <span class="blue">age slower.</span></div>
+    <div class="sub">Our faculty includes <strong>Julie Gibson Clark</strong>, ranked #2 in the world for slowest measured aging. Your friend learns her kind of protocol, built on their own data.</div>
+    <div class="facts">
+      <div class="fact"><div class="n">18</div><div class="l">WEEKS LIVE</div></div>
+      <div class="fact"><div class="n">8<em>&ndash;</em>15</div><div class="l">PER CLASS</div></div>
+      <div class="fact"><div class="n">CGM</div><div class="l">INCLUDED, U.S.</div></div>
+      <div class="fact"><div class="n">$289<em>/mo</em></div><div class="l">OR $1,249 ONCE</div></div>
+    </div>
+    <div class="cta-row">
+      <div class="cta">Refer a friend. Earn $300.</div>
+      <div class="cta-note">Employees only</div>
+    </div>
   </div>
-  <div class="photo"><img src="../assets/julie-goldenhour.jpg" alt=""></div>
+  <div class="credit">Julie Gibson Clark, LLA Faculty</div>
 </div>
-</body>
-</html>
+</body></html>

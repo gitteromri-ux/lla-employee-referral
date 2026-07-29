@@ -1,39 +1,44 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{width:1200px;height:628px;overflow:hidden;font-family:'Inter',sans-serif}
-.banner{position:relative;width:1200px;height:628px;background:#001233;overflow:hidden;display:flex}
-.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,18,51,.96) 0%,rgba(0,18,51,.84) 46%,rgba(0,18,51,.30) 100%)}
-.copy{position:relative;z-index:2;padding:64px 60px;display:flex;flex-direction:column;justify-content:center;max-width:720px}
-.brand{font-weight:600;font-size:19px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.95);margin-bottom:6px}
-.brand .life{color:#7EC8FF;font-weight:800}
-.byline{font-size:12.5px;color:rgba(255,255,255,.7);margin-bottom:36px;letter-spacing:.04em}
-.tag{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#6FA8FF;margin-bottom:24px;padding:9px 18px;border:1px solid rgba(111,168,255,.4);border-radius:999px;background:rgba(111,168,255,.08);width:max-content}
-.tag::before{content:"";width:7px;height:7px;border-radius:50%;background:#5EB6FF;box-shadow:0 0 8px #5EB6FF,0 0 14px rgba(94,182,255,.7)}
-h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:64px;line-height:1.04;color:#fff;margin-bottom:20px}
-h1 em{font-style:italic;color:#6FA8FF}
-.sub{font-size:19px;line-height:1.5;color:rgba(255,255,255,.85);max-width:560px;margin-bottom:32px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:628px;overflow:hidden;font-family:'Inter',sans-serif;background:#001233}
+.banner{position:relative;width:1200px;height:628px;background:
+  radial-gradient(900px 500px at 85% -10%, rgba(0,110,255,0.35) 0%, rgba(0,110,255,0) 60%),
+  radial-gradient(700px 420px at 10% 115%, rgba(94,182,255,0.22) 0%, rgba(94,182,255,0) 55%),
+  linear-gradient(160deg,#03102B 0%,#001233 55%,#03204E 100%);
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:44px 70px 40px}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(126,200,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(126,200,255,0.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.logo{height:118px;margin-bottom:20px;position:relative;filter:drop-shadow(0 4px 18px rgba(0,0,0,0.5))}
+.head{font-size:76px;font-weight:900;color:#fff;letter-spacing:-0.025em;line-height:1.02;position:relative}
+.head .blue{color:#7EC8FF}
+.sub{font-size:23px;font-weight:600;color:rgba(255,255,255,0.85);margin-top:14px;position:relative}
 .sub strong{color:#fff}
-.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#5EB6FF 0%,#2E8BE6 100%);color:#06243F;font-weight:800;font-size:19px;padding:17px 34px;border-radius:14px;width:max-content;box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 10px 26px rgba(46,139,230,.38)}
-</style>
-</head>
-<body>
+.facts{display:flex;gap:14px;margin-top:30px;position:relative}
+.fact{background:rgba(255,255,255,0.06);border:1px solid rgba(126,200,255,0.35);border-radius:10px;padding:14px 22px;min-width:170px}
+.fact .n{font-family:'Instrument Serif',Georgia,serif;font-size:34px;color:#fff;line-height:1}
+.fact .n em{font-style:italic;color:#7EC8FF}
+.fact .l{font-size:13.5px;font-weight:700;color:rgba(255,255,255,0.72);margin-top:6px;letter-spacing:0.02em}
+.cta-row{display:flex;align-items:center;gap:22px;margin-top:32px;position:relative}
+.cta{background:linear-gradient(135deg,#2E91FF 0%,#0066FF 100%);color:#fff;font-size:24px;font-weight:800;padding:18px 46px;border-radius:12px;border:1px solid rgba(140,200,255,0.6);box-shadow:0 10px 34px rgba(20,110,240,0.55), inset 0 1px 0 rgba(255,255,255,0.3)}
+.cta-note{font-size:16px;font-weight:700;color:rgba(255,255,255,0.65);letter-spacing:0.06em;text-transform:uppercase}
+</style></head><body>
 <div class="banner">
-  <img class="bg" src="../assets/hero-referral.jpg" alt="">
-  <div class="overlay"></div>
-  <div class="copy">
-    <div class="brand">Longevity <span class="life">Life</span> Academy</div>
-    <div class="byline">by eTeacher Group</div>
-    <div class="tag">Employee Referral Program</div>
-    <h1>Refer a friend.<br><em>Earn $300.</em></h1>
-    <p class="sub">Know someone who'd love our live 18-week longevity course, <strong>The Longevity Blueprint</strong>? Refer them — when they enroll, you get <strong>$300</strong>.</p>
-    <span class="cta">Submit Your Referral →</span>
+  <div class="grid-lines"></div>
+  <img class="logo" src="../assets/lla-logo-exact-transparent@2x.png" alt="Longevity Life Academy by eTeacher Group">
+  <div class="head">Refer a friend.<br><span class="blue">Earn $300.</span></div>
+  <div class="sub">Give someone you care about <strong>The Longevity Blueprint</strong>, our live online longevity course.</div>
+  <div class="facts">
+    <div class="fact"><div class="n">18</div><div class="l">Weeks, live online</div></div>
+    <div class="fact"><div class="n">50<em> min</em></div><div class="l">Weekly sessions</div></div>
+    <div class="fact"><div class="n">8<em>&ndash;</em>15</div><div class="l">Students per class</div></div>
+    <div class="fact"><div class="n">CGM</div><div class="l">Device included, U.S.</div></div>
+  </div>
+  <div class="cta-row">
+    <div class="cta">Submit a referral</div>
+    <div class="cta-note">eTeacher Group employees only</div>
   </div>
 </div>
-</body>
-</html>
+</body></html>
